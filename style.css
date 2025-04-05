@@ -1,0 +1,370 @@
+body{
+	margin:0;
+}
+/* Stilizacija headera */
+
+.site-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #ffffff; /* Bijela pozadina */
+	z-index: 1000;
+	padding: 23px 0;
+  }
+  
+  /* Da se sadržaj ne podvuče ispod fiksnog headera */
+  #page {
+	padding-top: 140px; /* Prilagodi ovisno o visini headera */
+  }
+.container { 
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	margin:0 40px;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.site-branding img {
+    height: 50px; /* Postavi veličinu loga */
+	max-width: 100%; /* Slika se neće proširiti izvan širine roditeljskog elementa */
+    height: auto; /* Održava omjer širine i visine */
+}
+
+.nav-links {
+    font-family: 'DM Mono', monospace;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+	display: flex; /* Koristi flexbox za raspored stavki */
+    list-style: none; /* Uklanja defaultne liste */
+    margin: 0; /* Uklanja marginu sa svih strana */
+    padding: 0; /* Uklanja padding */
+	gap: 48px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    font-family: 'DM Mono', monospace; /* Font za linkove */
+    font-weight: 500; /* Težina fonta */
+    font-size: 16px; /* Veličina fonta */
+    line-height: 100%; /* Visina linije */
+    text-decoration: none; /* Uklanja podcrtavanje */
+    color: #000; /* Boja linkova */
+    display: block;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+	
+}
+
+.nav-links a:hover {
+    color: #EA7D66;
+}
+
+/* Stilizacija za novi section */
+.architecture-section {
+    height: 424px;
+	margin: 6px 40px 65px 40px;
+    background-color: #000; /* Crna pozadina */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Osigurava da marginu ne dodajemo na ukupnu širinu */
+	padding: 160px 80px;
+	
+}
+
+.architecture-text {
+    font-family: 'DM Mono', monospace;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #EA7D66;
+    text-align: center;
+}
+
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolone */
+    padding: 0 30px 15px 30px;
+	
+}
+
+.blog-item {
+    background: white;
+    padding: 0 10px 10px 10px;
+    text-align: left;
+	overflow: hidden;;
+	margin-bottom: 50px;
+}
+
+.blog-item img {
+    width: 100%; /* Ograničena širina */
+    height: auto; /* Visina ide po slici */
+	overflow: hidden;
+	
+}
+
+.blog-author {
+    font-size: 16px;
+    color: black;
+	font-family: 'DM Mono', sans-serif;
+    font-weight: 300;
+	margin-bottom: 19px;
+   
+}
+
+.blog-category {
+    display: inline-block;
+    background:#EA7D66;
+    color: black;
+    padding: 8px;
+    font-size: 14px;
+	font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+
+h2 {
+	margin:10px 0px 5px 0px;
+	font-family: 'DM Mono', monospace;
+    font-weight: 500;
+    font-size: 24px;
+}
+p{
+	margin: 0px;
+}
+
+.site-footer {
+    background: #EA7D66;
+    color: black;
+    padding: 40px;
+	
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:35px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: flex-start;
+    gap:45px;
+    letter-spacing: 0.5
+	
+}
+
+.footer-links a {
+    color: black;
+    text-decoration: none;
+    line-height: 24px;
+	font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+	line-height: 100%;
+	padding-left: 5px;
+
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-social-icons a {
+    margin-left: 15px;
+}
+
+.footer-social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.footer-logo img {
+    width: 192px;
+    height: 32;
+	margin-bottom: 10px;
+}
+
+
+.footer-text p {
+    margin: 5px 0;
+    font-size: 14px;
+	font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+}
+.footer-text{
+	margin-bottom: 80px;
+}
+
+
+
+.blog-detail {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  .blog-image-wrapper {
+	
+	max-width: 100%;
+	height: 620px;
+	overflow: hidden;
+	margin:0 40px 40px 40px;
+	
+  }
+  
+  .blog-featured-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+
+  }
+  
+  .blog-meta-wrapper {
+	max-width: 1000px;
+	margin-bottom: 45px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-left: 20px;
+  }
+  
+  .blog-title-detail {
+	font-size: 64px;
+	font-weight: 500;
+	font-family: 'DM Mono', sans-serif;
+	text-align: left;
+	margin: 0;
+  }
+  
+  .blog-author-detail {
+	font-size: 40px;
+	font-family: 'DM Mono', sans-serif;
+	font-weight: 300;
+	text-align: left;
+  }
+  
+  .blog-category-detail {
+	background-color: #EA7D66;
+	padding: 8px;
+	font-size: 16px;
+	font-family: 'DM Sans', monospace;
+	text-align: left;
+	margin-top: 16px;
+  }
+  
+  .blog-wrapper {
+	display: grid;
+	grid-template-columns: 1fr minmax(0, 780px) 1fr;
+	padding: 20px 0;
+	margin: 0 0 50px -200px;
+  }
+  
+  .blog-content {
+	grid-column: 2;
+	padding: 0 40px;
+	color: #1a1a1a;
+	text-align: left;
+  }
+  
+  .blog-content img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 20px 0;
+  }
+  .blog-content p {
+	text-align: left;
+	margin-bottom: 1.5em;
+	font-family: "DM Sans";
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0%;
+	padding-bottom: 20px;
+	line-height: 24px;
+	font-family: 'DM Sans', sans-serif;
+	padding-right: 30px;
+
+  }
+
+  .blog-content figure {
+	margin-bottom: 35px;
+	text-align: left;
+  }
+  
+  h3 {
+    font-family: 'DM Sans', sans-serif; /* Apply the DM Sans font */
+    font-weight: 400; /* Set font weight to 400 (normal) */
+    font-style: italic; /* Make the text italic */
+    font-size: 16px; /* Adjust the font size if needed */
+    line-height: 24px; /* Set line height for readability */
+}
+
+  
+/*Animacija ispisivanje slova */
+
+.typewriter {
+	overflow: hidden; 
+	white-space: nowrap;
+	border-right: 2px solid #000;
+	animation: typing 2s steps(30, end), blink 0.75s step-end infinite;
+	width: fit-content;
+  }
+  
+  @keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+  }
+  
+  @keyframes blink {
+	50% { border-color: transparent }
+  }
+  
+  ::selection {
+	background-color: #EA7D66; 
+	color: white;
+  }
+
+  .hover-underline {
+	position: relative;
+	color: inherit;
+	text-decoration: none;
+	transition: color 0.3s ease;
+  }
+  a:hover {
+	position: relative;
+	color: inherit;
+	text-decoration: none;
+	transition: color 0.3s ease;
+	color: #EA7D66;
+  }
+  
+
+  
+  
+  
+  
